@@ -1,0 +1,518 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-12-29 18:07+0100\n"
+"PO-Revision-Date: 2017-12-29 18:23+0100\n"
+"Last-Translator: Alejandro Amat <alex@iessanvicente.com>\n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../../../app/views\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 403.view.php:1
+msgid "403 - Acceso restringido"
+msgstr "403 - Access forbidden"
+
+#: 403.view.php:6
+msgid ""
+"No posees el nivel de acceso necesario para acceder a esta pagina o recurso."
+msgstr "You don't have the required clearance level to access this resource."
+
+#: 404.view.php:1
+msgid "404 - Pagina no encontrada"
+msgstr "404 - Page not found"
+
+#: 404.view.php:6
+msgid "No se ha encontrado la pagina o el recurso indicado"
+msgstr "Page or resource not found."
+
+#: 409.view.php:1
+msgid "409 - Conflicto detectado"
+msgstr "409 - Conflict detected"
+
+#: 409.view.php:6
+msgid ""
+"La solicitud no pudo ser procesada debido a un conflicto con el estado "
+"actual del recurso."
+msgstr ""
+"Couldn't process the request due to a conflict with the actual status of "
+"the resource."
+
+#: 409.view.php:7
+msgid "No se pudo procesar la solicitud debido al estado actual del recuros"
+msgstr ""
+"Could't complete the request due to the conflicting status of the resource."
+
+#: communications.view.php:14
+msgid "Todos los usuarios"
+msgstr "All users"
+
+#: communications.view.php:26
+msgid "Chats recientes"
+msgstr "Opened chats"
+
+#: communications.view.php:40
+msgid "Selecciona un usuario para mandarle un mensaje."
+msgstr "Select an users to send a message"
+
+#: communications.view.php:49
+msgid "Chat con"
+msgstr "Chat with"
+
+#: eventdetails.view.php:2
+msgid "Detalles del evento: "
+msgstr "Details about: "
+
+#: eventdetails.view.php:6
+msgid "Eventos Listados"
+msgstr "Listed events"
+
+#: eventdetails.view.php:7
+msgid "Detalles del evento"
+msgstr "Event details"
+
+#: eventdetails.view.php:16 eventslisted.view.php:47
+msgid "Categoria:"
+msgstr "Category:"
+
+#: eventdetails.view.php:20
+msgid "Mas informacion: "
+msgstr "More info"
+
+#: eventdetails.view.php:28
+msgid "Fecha del evento:"
+msgstr "Date of the event:"
+
+#: eventdetails.view.php:34
+msgid "Entradas disponibles desde:"
+msgstr "Tickets available from"
+
+#: eventdetails.view.php:38
+msgid "Entradas disponibles hasta:"
+msgstr "Tickets available until:"
+
+#: eventdetails.view.php:42
+msgid "Entradas disponibles:"
+msgstr "Tickets available:"
+
+#: eventdetails.view.php:46
+msgid "Precio x Entrada:"
+msgstr "Price per ticket:"
+
+#: eventdetails.view.php:53
+msgid "Cant. Entradas a comprar"
+msgstr "Quant. tickets to buy:"
+
+#: eventdetails.view.php:69
+msgid "Anfitrion:"
+msgstr "Host:"
+
+#: eventdetails.view.php:77 profile.view.php:45
+msgid "Mandar mensaje"
+msgstr "Send message"
+
+#: eventdetails.view.php:78
+msgid "Ver Eventos"
+msgstr "Show events"
+
+#: eventslisted.view.php:2
+msgid "Eventos:"
+msgstr "Events:"
+
+#: eventslisted.view.php:6
+msgid "Eventos Listado"
+msgstr "Events listed"
+
+#: eventslisted.view.php:10
+msgid "Buscando en eventos de "
+msgstr "Searching events of"
+
+#: eventslisted.view.php:12
+msgid "Buscar globalmente"
+msgstr "Search globally"
+
+#: eventslisted.view.php:30
+msgid "Fech. Evento:"
+msgstr "Date Event"
+
+#: eventslisted.view.php:35
+msgid "Precio x entrada:"
+msgstr "Price per entry"
+
+#: eventslisted.view.php:42
+msgid "Provincia:"
+msgstr "CIty"
+
+#: eventslisted.view.php:52 index.view.php:29 index.view.php:66
+#: index.view.php:104 index.view.php:142 index.view.php:182
+#: userslisted.view.php:58
+msgid "Ver"
+msgstr "See"
+
+#: eventslisted.view.php:54 index.view.php:31 index.view.php:68
+#: index.view.php:106 index.view.php:144 index.view.php:184
+#: userslisted.view.php:60
+msgid "Editar"
+msgstr "Edit"
+
+#: eventslisted.view.php:55 index.view.php:32 index.view.php:69
+#: index.view.php:107 index.view.php:145 index.view.php:185
+#: userslisted.view.php:62
+msgid "Borrar"
+msgstr "Delete"
+
+#: index.view.php:3
+msgid "Eventos Actuales"
+msgstr "Actual events"
+
+#: index.view.php:41
+msgid "Proximamente...:"
+msgstr "Soon...:"
+
+#: index.view.php:79
+msgid "Eventos en tu provincia:"
+msgstr "Events on your city:"
+
+#: index.view.php:117
+msgid "Otros Eventos:"
+msgstr "Other events:"
+
+#: index.view.php:156
+msgid "Eventos de"
+msgstr "Events of "
+
+#: login.view.php:11 partials/header.part.php:117 register.view.php:14
+#: register.view.php:15
+msgid "Nombre de usuario"
+msgstr "User name"
+
+#: login.view.php:15
+msgid "Password"
+msgstr "Password"
+
+#: newevent.view.php:6
+msgid "editando evento"
+msgstr "editing event"
+
+#: newevent.view.php:6 partials/menu.part.php:13
+msgid "Crear Evento"
+msgstr "Create event"
+
+#: newevent.view.php:13
+msgid "Descripcion"
+msgstr "Description"
+
+#: newevent.view.php:14
+msgid "Descripcion del evento"
+msgstr "Event description"
+
+#: newevent.view.php:17
+msgid "Nombre del evento"
+msgstr "Event name"
+
+#: newevent.view.php:24 partials/header.part.php:95 register.view.php:33
+#: userslisted.view.php:20 userslisted.view.php:54
+msgid "Provincia"
+msgstr "City"
+
+#: newevent.view.php:26
+msgid "selecciona provincia"
+msgstr "Choose city"
+
+#: newevent.view.php:33
+msgid "Direccion"
+msgstr "Direction"
+
+#: newevent.view.php:40
+msgid "Fecha del Evento"
+msgstr "Event's date"
+
+#: newevent.view.php:44 partials/header.part.php:94
+msgid "Categoria"
+msgstr "Category"
+
+#: newevent.view.php:46
+msgid "seleccionar categoria"
+msgstr "Select category"
+
+#: newevent.view.php:56
+msgid "Precio"
+msgstr "Price"
+
+#: newevent.view.php:60
+msgid "Poster"
+msgstr "Poster"
+
+#: newevent.view.php:67
+msgid "Ventas disponible hasta"
+msgstr "Tickets available until"
+
+#: newevent.view.php:71
+msgid "Ventas disponible desde"
+msgstr "Tickets available from"
+
+#: newevent.view.php:78
+msgid "Cantidad de entradas disponibles"
+msgstr "Total number of tickets availables"
+
+#: newevent.view.php:82
+msgid "Enlace externo (opcional)"
+msgstr "External link (optional)"
+
+#: newevent.view.php:97
+msgid "Cancelar"
+msgstr "Abort"
+
+#: partials/header.part.php:34
+msgid "Buscar entre fechas: "
+msgstr "Search between dates:"
+
+#: partials/header.part.php:38
+msgid "todas las fechas"
+msgstr "All dates"
+
+#: partials/header.part.php:39
+msgid "manyana"
+msgstr "Tomorrow"
+
+#: partials/header.part.php:40
+msgid "esta semana"
+msgstr "this week"
+
+#: partials/header.part.php:41
+msgid "este fin de semana"
+msgstr "this weekend"
+
+#: partials/header.part.php:42
+msgid "Este mes"
+msgstr "this month"
+
+#: partials/header.part.php:51
+msgid "Provincia: "
+msgstr "City"
+
+#: partials/header.part.php:55 partials/header.part.php:69
+msgid "todas"
+msgstr "All"
+
+#: partials/header.part.php:65
+msgid "Categoria: "
+msgstr "Category: "
+
+#: partials/header.part.php:79
+msgid "Mostrar solo disponibles:"
+msgstr "Show only availables: "
+
+#: partials/header.part.php:88
+msgid "ordenar por:"
+msgstr "Order by: "
+
+#: partials/header.part.php:93 userslisted.view.php:18
+msgid "Fecha"
+msgstr "Date"
+
+#: partials/header.part.php:112
+msgid "Autenticarse"
+msgstr "Authenticate"
+
+#: partials/header.part.php:122 register.view.php:25 register.view.php:26
+msgid "password"
+msgstr "password"
+
+#: partials/header.part.php:127
+msgid "No tienes cuenta? !Registrate"
+msgstr "Don't have an account? Register!"
+
+#: partials/menu.part.php:5
+msgid "Mi perfil"
+msgstr "My profile"
+
+#: partials/menu.part.php:6
+msgid "Mis entradas"
+msgstr "My tickets"
+
+#: partials/menu.part.php:7
+msgid "Mis mensajes"
+msgstr "my messages"
+
+#: partials/menu.part.php:11
+msgid "Eventos"
+msgstr "Events"
+
+#: partials/menu.part.php:12
+msgid "Mis eventos"
+msgstr "My events"
+
+#: partials/menu.part.php:17
+msgid "Pagina"
+msgstr "Page"
+
+#: partials/menu.part.php:18
+msgid "Crear Cuenta"
+msgstr "Create account"
+
+#: partials/menu.part.php:19
+msgid "Registrarse"
+msgstr "Register"
+
+#: partials/menu.part.php:20
+msgid "Lista de Usuarios"
+msgstr "Users list"
+
+#: partials/menu.part.php:21
+msgid "Acceder"
+msgstr "Authenticate"
+
+#: partials/menu.part.php:23
+msgid "Salir de "
+msgstr "Logout from "
+
+#: profile.view.php:32
+msgid "Nombre"
+msgstr "Name"
+
+#: profile.view.php:33
+msgid "Email"
+msgstr "Email"
+
+#: profile.view.php:34 userslisted.view.php:19
+msgid "Rol"
+msgstr "Role"
+
+#: profile.view.php:38
+msgid "Ver eventos listados"
+msgstr "See events listed"
+
+#: profile.view.php:41
+msgid "Ver eventos en portada"
+msgstr "See events on index"
+
+#: profile.view.php:50
+msgid "Ver entradas de"
+msgstr "See events of "
+
+#: profile.view.php:55
+msgid "Ver mis entradas"
+msgstr "See my events "
+
+#: profile.view.php:58
+msgid "Ver mis mensajes"
+msgstr "See my messages"
+
+#: profile.view.php:66
+msgid "Eventos totales"
+msgstr "Total events"
+
+#: profile.view.php:67
+msgid "Tickets vendidos"
+msgstr "Sell'd entries"
+
+#: profile.view.php:68
+msgid "Ganancias totales"
+msgstr "Total profit"
+
+#: profile.view.php:71
+msgid "Editar perfil"
+msgstr "Edit profile"
+
+#: register.view.php:18 register.view.php:19
+msgid "Correo"
+msgstr "Email "
+
+#: register.view.php:21
+msgid "Confirmacion del correo"
+msgstr "Email confirmation "
+
+#: register.view.php:28
+msgid "Confirmacion de la password"
+msgstr "Password confirmation"
+
+#: register.view.php:35
+msgid "Selecciona provincia"
+msgstr "Select city"
+
+#: register.view.php:43
+msgid "Role"
+msgstr "Role"
+
+#: register.view.php:47 register.view.php:53 register.view.php:56
+msgid "Comprador"
+msgstr "Buyer"
+
+#: register.view.php:48 register.view.php:54 register.view.php:57
+msgid "Gestor"
+msgstr "Gestor"
+
+#: register.view.php:59
+msgid "Administrador"
+msgstr "Administrator"
+
+#: register.view.php:67
+msgid "Avatar"
+msgstr "Avatar"
+
+#: ticketslisted.view.php:23
+msgid "Evento"
+msgstr "Event"
+
+#: ticketslisted.view.php:28
+msgid "Fecha compra"
+msgstr "Date of purcharse"
+
+#: ticketslisted.view.php:33
+msgid "Precio total"
+msgstr "Total price "
+
+#: ticketslisted.view.php:40
+msgid "Comprado desde"
+msgstr "Purchased from "
+
+#: ticketslisted.view.php:45
+msgid "Fech. Evento"
+msgstr "Event's date "
+
+#: ticketslisted.view.php:50
+msgid "Cantidad de usos x persona"
+msgstr "Number of usages x person"
+
+#: ticketslisted.view.php:54
+msgid "Mostrar codigo"
+msgstr "Show code"
+
+#: userslisted.view.php:6
+msgid "Usuario"
+msgstr "User"
+
+#: userslisted.view.php:11
+msgid "Buscar usuario"
+msgstr "Search user"
+
+#: userslisted.view.php:15
+msgid "ordenar por"
+msgstr "Order by"
+
+#: userslisted.view.php:37
+msgid "Nivel de autorizacion"
+msgstr "Level or clearance"
+
+#: userslisted.view.php:42
+msgid "fecha de alta"
+msgstr "Register date"
+
+#: userslisted.view.php:49
+msgid "Numero de eventos"
+msgstr "Number of events"
+
+#~ msgid "Ver Eventos List."
+#~ msgstr "Show Listed Events."
+
+#~ msgid "liveticket - Algunos derechos reservados."
+#~ msgstr "liveticket  -  Some rights reseved."
+
+#~ msgid "Usuarios"
+#~ msgstr "Users"

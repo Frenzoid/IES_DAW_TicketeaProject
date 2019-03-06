@@ -1,0 +1,67 @@
+Usuario administrador: "root"
+Contraseña administrador: "popo"
+Servidor http://liveticket.doomturtle.cloud/
+Proximamente en https.
+
+
+El proyecto contiene CASI todo lo que se pide en el enunciado (excepto el tramite con paypal) y mucho más..
+
+
+Aquí hay unas anotaciónes de cosas extra y revisiones que he tenido en cuenta:
+
+
+Para comprobar todo el imput del usuario, me he hecho un trait que se encarga de trimear y detectar caracteres raros en todas las peticiones POST que se envian, y lo llamo cadavez que se carga una página, si hay algo raro, guardo en un array de sesion los errores (si es un formulario o algo así, a  la hora de validar reviso que ese array esté vacio)
+
+Se puede filtrar por rango de fechas (si no hay rango especificado se coje el del desplegable y si solo hay una fecha especificada (una de las dos) se tomara como día exacto.)
+
+A la hora de borrar un usuario o un evento, su avatar (y miniatura en el caso de ser el evento) se borran del servidor.
+
+El gestor ya no puede modificar o borrar un evento, pero el administrador si, aún así me encargo de que si el administrador baja el aforo,  que no se pueda bajar mas del numero de entradas compradas.
+
+Todos  los usuarios logeados pueden buscar a otros usuarios y ver sus perfiles y mandarse mensajes.
+
+El tema de los lenguajes lo he hecho como te comente en el mensaje del aula virtual.
+
+Seguramente verás 2 o 3 funciones y funcionalidades que estan hechas pero que al final no se usan o se usan en un solo sitio , funciones como el del trait de POSTSupervisor, aparte de trimear y adverir, tambien puede quitar esos caracteres raros, esto es debido a que al final me parecia mas adecuado advertir que enviar los datos, imaginate que un usuario se hace una cuenta con el nombre de usuario "<hola>", y cuando intente identificarse no pueda hacerlo porque en realidad se ha guardado como "hola", lo que quiero decir es que hay 2 o 3 funciones esparcidas que tienen gran utilidad pero no se usan porque al final decidi hacer algo mejor y dejar ambas opciones por si en algun final iba a usarlas para algo pero al final no las usé.
+
+Los usuarios puede  identificarse con su nombre de usuario o email.
+
+Si un usuario o evento no tiene avatar, se asigna uno por defecto, pero si se van a modificar y ya tenian uno de antes, y a la hora de guardar no se especifica el avatar, se quedará el que ya tenia de antes.
+
+Tanto los eventos y  usuarios, a la hora de modificarlos, borrarlos, se revisa varias veces el que la integridad de ese usuario o evento este intacta, esto es para evitar que personas que usen postman puedan hacer llamadas a las funciones de /create y similares con datos falsos o datos intexistentes o peor, que intenten editar un evento o usuario el cual no deberian poder editar, en general sirve para tapar agujeros de seguridad.
+
+Si un usuario se registra, al registrarse se hace autologin y se envia a su perfil, si un administrador crea un usuario, se redirige a la lista de usuarios.
+
+La busqueda de eventos se puede hacer tambien introduciendo el nombre del anfitrión (creador) del evento.
+
+Se pueden filtrar eventos por categoria, provincia, o mostrar solo los disponibles (aun en rango de compra y que tengan tickets).
+
+La busqueda de usuarios busca no solo por el nombre sino tambien por el role o por la ciudad o incluso por la fecha de alta.
+
+Si un usuario va a modificar un evento, y en ese mismo instante se ha comprado un ticket, lo redirigira a una página de error 409.
+
+Los beneficios están en el perfil de cada usuario.
+
+A la hora de crear un evento nuevo, se comprueban las fechas para que no haya conflictos (fecha de venta inicial y final y la del evento, en resumen, que no se puedan comprar entradas despues del evento y similares).
+
+Como he mencionado más arriba, todas las comprobaciones de los campos los hago via mensajes de errores, si algo falla me guardo un mensaje de error que mas tarde lo muestro, y al final de hacer todas las comprobaciones, reviso si hay algun mensaje de error, si lo hay vuelve a donde estaba y se muetran los errores, que no hay mensajes de error, pues hace lo que tiene que hacer.
+
+A la hora de comprar tickets, hago todas las reviciones necesarias, si ya no quedan tickets, o la fecha de compra ha acabado, el formulario de compra desaparece. pero si igualmente alguien llega a comprar algo que no podria comprar, se le dropea un mensaje de error y no se hace nada más.
+
+A la hora de trmitar un ticket, me guardo la IP del usuario (eso es algo que quise probar desde hace mucho ya que me parece bastante interesante que se pueda cojer desde la ip del router hasta la ip de un router interno si el usuario está en una subred) hize un trait extra para esto.
+
+Seguramente no esté todo en esta lista, ya que ahora mismo no me acuerdo de todo lo "extra" que hice, aún así, lo que está en la lista es lo "grueso", seguramente se me haya olvidado alguna validación por mencionar.
+
+Todos los formularios DE BUSQUEDA se autoenvian a la hora de detectar un cambio, esto es para facilitar el "no tener que apretar a into o poner un boton de enviar en un lugar donde quedaria feo o no hay manera de darle a intro" un ejemplo de esto es, a la hora de ordenar yo uso un desplebale, pues quedaria bastante mal poner un boton de "buscar" al lado del desplegable, quedaria mejor que detectase cuando el desplegable cambia de valor, y enviar ese valor y automaticamente ordenar.
+
+En el detalles de evento, si el usuario ha introducido la direccion correctamente, aparecerá la ubicacion en el mapa, si la ubicacion es incorrecta el mapa no mostrará la ubicación, esto esta inspirado en lo que tiene sanchis, pero yo no tuve tanta paciencia para hacerlo con javascript, así que lo que hice fue copiarme el API de googlemaps, y pegar la direccion en texto plano en el enlace, si la ubicacion es correcta se muestra, si no se muestra, igualmente el usuario puede ver el nombre de la dirección del evento en la misma página.
+
+Si el usuario está logeado, aparecera en la portada los eventos que hay en su provinci, aparte de los eventos que ya aparecen por defecto como los futuros y los actules.
+
+
+
+PD: en el jquery hay una fucion comentada, esta tendria que hacer scroll a bajo del todo en los chats a la hora de cargar la página, para que el usuario no tenga que hacerlo al enviar un mensaje. lo dejo comentado porque quiero preguntarselo el lunes a Julio. 
+
+PD: los unicos comentarios que hay, están porque me liaba a la hora de filrar eventos, y me pasaba más tiempo buscando cosas en mi codigo que arreglandolo.
+
+PD: siento los colores, al final no pude cambiarlos porque el informe de Julio tiene esta paleta de colores.
